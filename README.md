@@ -18,3 +18,11 @@ Foi necessário a utilização de uma imagem em 256 níveis de cinza (8 bits) 2�
 A biblioteca ``scikit-image`` é uma coleção de algoritmos para processamento de imagens e está disponível [**nesse link.**](https://scikit-image.org/)
 
 Já o módulo **data** da biblioteca ``scikit-image`` de onde foi retirada a imagem pode ser visualizada [**aqui.**](https://scikit-image.org/docs/dev/api/skimage.data.html?highlight=data#module-skimage.data)
+
+**Foram necessárias a utilização das seguintes bibliotecas:**
+
+- ``scikit-image`` (Documentação disponível [**aqui**](https://scikit-image.org/)
+- ``numpy`` (Documentação disponível [**aqui**](https://numpy.org/)
+- ``matplotlib`` (Documentação disponível [**aqui**](https://matplotlib.org/)
+
+
