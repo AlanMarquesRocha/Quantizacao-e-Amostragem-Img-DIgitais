@@ -9,8 +9,11 @@
     (512, 512, 3)
 
     Text(0.5, 1.0, 'Imagem original')
+
     
-![png](output_7_1.png)
+<figure>
+<img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_7_1.png?raw=true'/>
+</figure>   
     
 ### **Para fazer a amostragem da img_data, primeiro é necessário transformá-la em níveis de cinza.**
 
@@ -24,8 +27,10 @@ Após obter as arrays podemos aplicar a equação abaixo para obter a imagem em 
 
     Text(0.5, 1.0, 'Imagem original em níveis de cinza')
 
-![png](output_10_1.png)
-    
+<figure>
+<img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_10_1.png?raw=true'/>
+</figure> 
+
 ## **Nesta etapa serão produzidas 03 (três) imagens decorrentes da sub-amostragem de ``img_data`` em 50%, 25% e 12,5%.**
 
 ### **Sub-amostragem da imagem ``img_data`` em 50%**
@@ -58,18 +63,25 @@ Após obter as arrays podemos aplicar a equação abaixo para obter a imagem em 
 ### **Mostrando o resuldado das sub-amostragens de 50%, 25% e 12,5%.**
 
     Text(0.5, 1.0, 'Sub-amostragem em 12,5%')
+    
+<figure>
+<img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_22_1.png?raw=true'/>
+</figure> 
 
-![png](output_22_1.png)
-    
-![png](output_22_2.png)
-    
+<figure>
+<img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_22_2.png?raw=true'/>
+</figure> 
+
 # Nessa sessão serão produzidas três imagens reduzindo a quantização da intensidade dos pixels da imagem original para 4, 32 e 64 bits.
 
 ## Quantização da intensidade dos pixels da imagem para 04 tons,
 
     <matplotlib.image.AxesImage at 0x210c94bfbe0>
+    
+<figure>
+<img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_25_1.png?raw=true'/>
+</figure>     
 
-![png](output_25_1.png)
     
 ### A quantização levará em consideração a quantidade de bits da imagem original, sendo proporcional aos casos de 4, 32 e 64 tons, ou seja, o número de bits poderá ser calculado a regra abaixo:
 
@@ -135,15 +147,7 @@ Após obter as arrays podemos aplicar a equação abaixo para obter a imagem em 
 
 ### É necessário criar uma variável que servirá como referência para a obtenção dos valoriza quantizados da imagem ``img_cza`` em 32 tons.
 
-
-
-
     3
-
-
-
-
-
 
     array([[18, 13,  7, ..., 15, 14, 14],
            [21, 17, 14, ..., 14, 14, 14],
@@ -152,7 +156,6 @@ Após obter as arrays podemos aplicar a equação abaixo para obter a imagem em 
            [21, 21, 21, ...,  0,  0,  0],
            [21, 21, 21, ...,  0,  0,  0],
            [21, 21, 20, ...,  0,  0,  0]], dtype=uint8)
-
 
 
 ## Quantização da intensidade dos pixels da imagem para 128 tons,
@@ -196,8 +199,11 @@ Após obter as arrays podemos aplicar a equação abaixo para obter a imagem em 
     Text(0.5, 1.0, 'Imagem quantizada em 128 tons')
 
 
-![png](output_55_1.png)
-        
-![png](output_55_2.png)
-    
+<figure>
+<img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_55_1.png?raw=true'/>
+</figure>    
 
+<figure>
+<img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_55_2.png?raw=true'/>
+</figure>  
+        
