@@ -1,3 +1,4 @@
+
 # Projeto de sub-amostragem e quantização de imagens digitais
 
 ### **Realizando a importação das bibliotecas necessárias para o projeto**:
@@ -16,12 +17,12 @@ from skimage import data
 img_data = data.astronaut()
 ```
 
-
-### **È necessário verificar as dimensões da imagem, assim como mostrá-la para verificar se a importação funcionou sem erros.**
+### **É necessário verificar as dimensões da imagem, assim como mostrá-la para verificar se a importação funcionou sem erros.**
 ```py
 img_data.shape
 ```
     (512, 512, 3)
+    
 ```py
 # Mostrando a imagem img_data
 plt.imshow(img_data)
@@ -75,7 +76,8 @@ img_data.shape
     (512, 512, 3)
 
 ```py
-# Através das dimensões da imagem original, devemos gerar uma imagem com redução de 50%, ou seja, (256, 256)
+# Através das dimensões da imagem original, devemos gerar uma imagem com 
+# redução de 50%, ou seja, (256, 256)
 
 # Pega-se um pixel, intercalando o outro, pegando-se apenas 50% da imagem
 img_c1 = np.array(img_cza[np.arange(0,img_cza.shape[0],2)])
@@ -261,7 +263,8 @@ mtx_mk
 ### É necessário criar uma variável que servirá como referência para a obtenção dos valoriza quantizados da imagem ``img_cza`` em 4 tons.
 
 ```py
-# Criando a variável d_bits que representa o deslocamento dos pixels para a quantização da imagem em 04 tons.
+# Criando a variável d_bits que representa o deslocamento dos 
+# pixels para a quantização da imagem em 04 tons.
 d_bits = 8 - n_bit
 
 type(d_bits)
@@ -360,7 +363,8 @@ d_bits
     3
 
 ```py
-# Desloca d_bits para a direita, obtendo-se os valores quantizados na imagem img_t32:
+# Desloca d_bits para a direita, obtendo-se os valores quantizados
+# na imagem img_t32:
 img_t32 = mtx_and >> d_bits
 
 type(img_t32)
@@ -450,7 +454,8 @@ d_bits
     1
 
 ```py
-# Desloca d_bits para a direita, obtendo-se os valores quantizados na imagem img_t4:
+# Desloca d_bits para a direita, obtendo-se os valores quantizados
+# na imagem img_t4:
 img_t128 = mtx_and >> d_bits
 
 type(img_t128)
