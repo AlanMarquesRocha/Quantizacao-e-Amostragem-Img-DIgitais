@@ -18,16 +18,18 @@ img_data = data.astronaut()
 ```
 
 ### **É necessário verificar as dimensões da imagem, assim como mostrá-la para verificar se a importação funcionou sem erros.**
+
 ```py
 img_data.shape
 ```
-    (512, 512, 3)
+   (512, 512, 3)
     
 ```py
 # Mostrando a imagem img_data
 plt.imshow(img_data)
 plt.title("Imagem original")
-```
+```    
+
     Text(0.5, 1.0, 'Imagem original')
 
     
