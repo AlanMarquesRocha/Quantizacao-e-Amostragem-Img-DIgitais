@@ -22,7 +22,7 @@ img_data = data.astronaut()
 ```py
 img_data.shape
 ```
-   (512, 512, 3)
+    (512,512,3)
     
 ```py
 # Mostrando a imagem img_data
