@@ -1,5 +1,5 @@
 
-# Projeto de sub-amostragem e quantização de imagens digitais
+# Projeto de subamostragem e quantização de imagens digitais
 
 ### **Realizando a importação das bibliotecas necessárias para o projeto**:
 
@@ -66,9 +66,9 @@ plt.title("Imagem original em níveis de cinza")
 <img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_10_1.png?raw=true'/>
 </figure> 
 
-## **Nesta etapa serão produzidas 03 (três) imagens decorrentes da sub-amostragem de ``img_data`` em 50%, 25% e 12,5%.**
+## **Nesta etapa serão produzidas 03 (três) imagens decorrentes da subamostragem de ``img_data`` em 50%, 25% e 12,5%.**
 
-### **Sub-amostragem da imagem ``img_data`` em 50%**
+### **Subamostragem da imagem ``img_data`` em 50%**
 
 ```py
 # Mostrando as dimensões da imagem original
@@ -85,16 +85,16 @@ img_data.shape
 img_c1 = np.array(img_cza[np.arange(0,img_cza.shape[0],2)])
 img_c1 = np.array(img_c1[:,np.arange(0,img_cza.shape[1],2)])
 
-# Mostra o resultado da redução da imagem (sub-amostragem de 50%)
+# Mostra o resultado da redução da imagem (subamostragem de 50%)
 img_c1.shape
 ```
     (256, 256)
 
-### **Sub-amostragem da imagem ``img_data`` em 25%**
+### **Subamostragem da imagem ``img_data`` em 25%**
 
 ### Existem duas possibilidades
 
-- 1ª - Pega-se a imagem sub-amostrada em 50% e utiliza o mesmo raciocínio da sub-amostragem da ``img_data`` para ``img_c1``
+- 1ª - Pega-se a imagem sub-amostrada em 50% e utiliza o mesmo raciocínio da subamostragem da ``img_data`` para ``img_c1``
 
 - 2ª Pega-se um pixel, intercalando-se outros 03 (três), utilizando apenas 25% da imagem original (``ìmg_data``)
 
@@ -111,7 +111,7 @@ img_data.shape
 img_c2 = np.array(img_c1[np.arange(0,img_c1.shape[0],2)])
 img_c2 = np.array(img_c2[:,np.arange(0,img_c1.shape[1],2)])
 
-# Mostra o resultado da redução da imagem (sub-amostragem de 25%)
+# Mostra o resultado da redução da imagem (subamostragem de 25%)
 img_c2.shape
 ```
     (128, 128)
@@ -123,21 +123,21 @@ img_c2.shape
 img_c2_ = np.array(img_cza[np.arange(0,img_cza.shape[0],4)])
 img_c2_ = np.array(img_c2_[:,np.arange(0,img_cza.shape[1],4)])
 
-# Mostra o resultado da redução da imagem (sub-amostragem de 25%)
+# Mostra o resultado da redução da imagem (subamostragem de 25%)
 img_c2_.shape
 ```
     (128, 128)
 
 
-### **Sub-amostragem da imagem ``img_data`` em 12,5%**
+### **Subamostragem da imagem ``img_data`` em 12,5%**
 
-### Também é possível utilizar as duas possibilidades mostradas nos casos acima, porém o foco ficará apenas na sub-amostragem da imagem original (``img_data`` para a imagem ``ìmg_c3`` que representa a sub-amostragem em 12,5%.
+### Também é possível utilizar as duas possibilidades mostradas nos casos acima, porém o foco ficará apenas na subamostragem da imagem original (``img_data`` para a imagem ``ìmg_c3`` que representa a subamostragem em 12,5%.
 
 ```py
 img_c3 = np.array(img_cza[np.arange(0,img_cza.shape[0], 8)])
 img_c3 = np.array(img_c3[:,np.arange(0,img_cza.shape[1], 8)])
 
-# Mostra o resultado da redução da imagem (sub-amostragem de 25%).
+# Mostra o resultado da redução da imagem (subamostragem de 25%).
 # O resultado da imagem deve ser igual a 128/2 = (64, 64)
 img_c3.shape
 ```
@@ -156,20 +156,20 @@ ax1.set_title('Imagem original')
 
 # Carrega a imagem img_c1 e informa o título por meio da função set_title
 ax2.imshow(img_c1, plt.cm.gray)
-ax2.set_title('Sub-amostragem em 50%')
+ax2.set_title('Subamostragem em 50%')
 
 # PLota as duas imagens img_cza e img_c1:
 fig, (ax3, ax4) = plt.subplots(1, 2, figsize = (9,9), gridspec_kw = {'hspace': 0.3})
 
 # Carrega a imagem img_c2 e informa o título por meio da função set_title
 ax3.imshow(img_c2, plt.cm.gray) 
-ax3.set_title('Sub-amostragem em 25%')
+ax3.set_title('Subamostragem em 25%')
 
 # Carrega a imagem img_c3 e informa o título por meio da função set_title
 ax4.imshow(img_c3, plt.cm.gray)
-ax4.set_title('Sub-amostragem em 12,5%')
+ax4.set_title('Subamostragem em 12,5%')
 ```
-    Text(0.5, 1.0, 'Sub-amostragem em 12,5%')
+    Text(0.5, 1.0, 'Subamostragem em 12,5%')
     
 <figure>
 <img src='https://github.com/AlanMarquesRocha/Quantizacao-e-Amostragem-Img-DIgitais/blob/master/imgs/output_22_1.png?raw=true'/>
